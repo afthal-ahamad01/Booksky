@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar{
+    padding: 10px;
+    background-color: #8458B3;
+    color: azure;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.navbar h1{
+    display: inline;
+}
+
+.navbarContent{
+    margin-left: 60%;
+    padding: 10px;
+    display: inline;
+}
+
+
+
+.navbarContent li,ul{
+    display: inline;
+    padding: 7px;
+    color: black;
+}
+
+li:hover{
+    color: white;
+}
+
+li,button{
+    cursor: pointer;
+}
+.container{
+    padding: 10px;
+   
+    
+
+}
+
+.book-container{
+    padding: 15px;
+    background-color: #494D5F;
+    width: 30%;
+    border-radius: 10px;
+    color: azure;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.book-container h3{
+    color: #8458B3;
+}
+
+.book-container button{
+    border-radius: 5px;
+    background-color: #8458B3;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    margin-top: 7px;
+}
+
+.plus-button{
+    font-size: 30px;
+    background-color: #8458B3;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 100%;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.popup-overlay{
+    background-color: black;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    
+}
+
+.popup-box{
+    background-color: #8458B3;
+    width: 40%;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border-radius: 10px;
+    z-index: 2;
+    display: none;   
+
+}
+
+.popup-box input{
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: solid black 2px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.popup-box input::placeholder{
+    color: rgb(26, 24, 24);
+    font-size: small;
+}
+
+.popup-box textarea{
+    width: 100%;
+    background: transparent;
+    border: solid black 2px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.popup-box textarea::placeholder{
+    color: rgb(26, 24, 24);
+    font-size: small;
+}
+
+.popup-box button{
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: azure;
+    padding: 5px;
+}
+
+.popup-box input:focus{
+    outline: none;
+}
+
+.popup-box textarea:focus{
+    outline: none;
+}
+
+.shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top:auto;/* Pushes the shop section to the bottom */
+    width: 100%;
+    border-top: 2px solid #ccc;
+}
+.book{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px;
+    align-items: center;
+    
+}
+
+.book img{
+    width: 100%;
+    height: 234px;
+    display: block;
+    object-fit: cover;
+}
+
+
+.book h5{
+
+    height: auto;
+    padding-top: 10px;
+    color: #333;
+
+}
+
+.book h6{
+    height: auto;
+    padding-top: 5px;
+    color: #555;
+}
+
+@media screen and (max-width: 400px)
+{
+    .book-container{
+        width: 50%;
+        height: max-content;
+    }
+}

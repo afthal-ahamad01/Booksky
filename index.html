@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <div class="navbar">
+        <h1>Booksky</h1>
+        <nav class="navbarContent">
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Reviews</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </div>
+
+   
+
+    <div class="container">
+        <div class="book-container">
+            <h3>The Whispering Canopy</h3>
+            <h5>Afthal Ahamad</h5>
+            <p>Nestled deep within the heart of an ancient forest lies a village untouched by time, where the towering trees seem to whisper secrets to those who listen closely. For centuries, the villagers of Elmswood have lived in harmony with nature, guided by the cryptic messages conveyed by the forest's mysterious canopy.</p>
+            <button id="deleteStory" onclick="removeBook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h3>Add Book</h3>
+        <form>
+        <input type="text" placeholder="Enter Book Title" id="bookTitle">
+        <input type="text" placeholder="Enter the name of the author" id="bookAuthor">
+        <textarea placeholder="Enter the book description" id="bookDescription"></textarea>
+        <button id="addBook">Add Book</button>
+        <button id="cancel">Cancel</button>
+        </form>
+    </div>
+
+    <div class="shop">
+        <div class="book">
+            <img src="th.jpeg">
+            <h5>4321</h5>
+            <h6>BY PAUL AUSTER</h6>
+        </div>
+        <div class="book">
+            <img src="th (1).jpeg">
+            <h5>Majories new friend</h5>
+            <h6>BY CAROLYNE WELLS</h6>
+        </div>
+        <div class="book">
+            <img src="OIP.jpeg">
+            <h5>Harry Potter</h5>
+            <h6>BY L.K ROWLING</h6>
+        </div>
+        
+
+    </div>
+    
+    <button class="plus-button" id="plusButton">+</button>
+    <script src="script.js">
+    </script>
+</body>
+</html>
